@@ -1,0 +1,13 @@
+nav .brand-logo {
+  padding: 0 15px;
+}
+h1 {
+  font-weight: 600;
+}
+img {
+  min-width: 1700px; /* my screen is larger than the img */
+}
+i {
+  padding-right: 5px;
+  vertical-align: bottom;
+}
