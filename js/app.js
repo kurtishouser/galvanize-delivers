@@ -54,7 +54,12 @@ $(function() {
     if (order.length > 0 && name.length > 0 && phone.length > 0 && address.length > 0) {
       Materialize.toast('Success! Thank you for your order!', 5000);
     } else {
-      Materialize.toast("Unfortunately, we could not complete your order.", 5000);
+      if (order.length === 0) {
+        Materialize.toast("Please add somethng to your order.", 5000);
+      } else if (name.length === 0 || phone.length === 0 || address.length === 0) {
+        Materialize.toast("Please fill in the required fields.", 5000);
+      }
+
     }
     return false;
   });
