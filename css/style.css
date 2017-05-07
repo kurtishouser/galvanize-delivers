@@ -4,10 +4,13 @@ nav .brand-logo {
 h1 {
   font-weight: 600;
 }
-img {
+img.parallax {
   min-width: 1700px; /* my screen is larger than the img */
 }
 i {
   padding-right: 5px;
   vertical-align: bottom;
+}
+.card img {
+  width: 100%;
 }
