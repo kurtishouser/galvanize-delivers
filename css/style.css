@@ -14,3 +14,17 @@ i {
 .card img {
   width: 100%;
 }
+/* just to make the menu cards look OK on iPad Air landscape */
+@media only screen and (min-width: 1000px) and (max-width: 1500px) {
+  .card .card-content {
+    position: relative;
+    min-height: 160px;
+  }
+  .item-price {
+    position: absolute;
+    bottom: 20px;
+  }
+  .add-to-order {
+    font-size: 12px;
+  }
+}
